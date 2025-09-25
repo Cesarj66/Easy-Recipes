@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/buttonBarBack"
+    tools:context=".activities.MainActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnList"
+        android:layout_marginBottom="-48dp"
+        android:name="org.fmz.easyrecipes.fragments.HomeFragment" />
+
+    <ImageButton
+        android:id="@+id/btnList"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/buttonBarBack"
+        android:contentDescription="@string/my_recipes"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/icon_my_recipes" />
+
+    <ImageButton
+        android:id="@+id/btnAdd"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="312dp"
+        android:layout_marginBottom="0dp"
+        android:adjustViewBounds="false"
+        android:background="@color/buttonBarBack"
+        android:contentDescription="@string/add_recipe"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/icon_add_recipe" />
+
+    <ImageButton
+        android:id="@+id/btnHome"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="false"
+        android:background="@color/buttonBarBack"
+        android:contentDescription="@string/home"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/home_icon" />
+
+    <ImageButton
+        android:id="@+id/btnLogout"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/buttonBarBack"
+        android:contentDescription="@string/logout"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/icon_logout" />
+
+</RelativeLayout>

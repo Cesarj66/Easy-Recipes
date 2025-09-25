@@ -1,0 +1,96 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- Welcome Image -->
+    <ImageView
+        android:id="@+id/welcomeImage"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/recipe_book"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/logo"/>
+
+    <!-- My Recipes Button -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/myRecipesCardView"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/welcomeImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/addCardView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/myRecipesButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/my_recipes"
+                android:scaleType="centerCrop"
+                android:src="@drawable/myrecipes" />
+
+            <TextView
+                android:id="@+id/myRecipesTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/my_recipes"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Add Button -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/addCardView"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/myRecipesCardView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/addButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/add_recipe"
+                android:scaleType="centerCrop"
+                android:src="@drawable/addrecipes" />
+
+            <TextView
+                android:id="@+id/addTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_recipe"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

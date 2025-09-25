@@ -1,0 +1,55 @@
+Callbacks:
+    - The user should be able to click at least one View that causes
+    a callback function to be called, which produces an apparent
+    result back to the user.
+Logging:
+    - Important events should be logged to the Logcat area with varying levels and unique tags.
+Layouts:
+    - Your app must use the ConstraintLayout at least once with multiple internal Views.
+    - Elsewhere in your app, you must use another Layout container type, such as LinearLayout
+      (horizontal or vertical), or TableLayout
+Resources:
+    - There should be at least two image resources utilized in some way by the application, in an
+     interactive way.
+Resources (extra credit):
+    - Earn extra credit by having your app embed a playable video or audio file. You may implement
+      this using resources OR asset file streams.
+Resource qualifiers:
+    - The app should make use of resource qualifiers to dynamically choose alternative resources
+      based on device configuration. There should be at least three dynamically chosen resources.
+    - The first dynamic resource should be the strings file that allows for multiple translations
+     of the app; The app should support at least 3 translations.
+    - The second dynamic resource should be a layout file that shows the user a different layout
+     based on orientation (or alternatively the screen size).
+    - The third (and beyond, if desired) resources may be anything of your choosing.
+Persistence:
+    - The app should allow the user to generate data in some way. The data should survive device
+      rotations by utilizing a ViewModel.
+    - The app should also have the ability to save files. At least one file should be saved
+      to the device via user interaction, survive across app exit, and loaded+viewable on
+      the next launch.
+    - The app should save at least two user preferences by utilizing the DataStore package (or
+      alternatively, the FireStore package). Preferences should persist across app exit.
+    - App allows user to enter data that can be saved to a local SQLite database and fetched later.
+      Data survives app exit. User is able to save/fetch multiple entries for the same type of
+      data (i.e., multiple rows in a database table). This requirement may be tweaked slightly
+      the week before presentations, if needed.
+User Interface:
+    - The app should contain at least two fragments somewhere. Each fragment should be used in at
+      least two places in the app. At least one layout should contain multiple fragments.
+        Example: Two different layouts (dynamically chosen per above requirements) that utilize the
+        same two fragments (reuse), with one layout utilizing an additional third fragment.
+    - The user interface must contain at least one List with RecyclerView.
+    - The user interface should be user-friendly, functional, optimal and polished on devices of
+      various sizes and in both orientation (portrait/landscape).
+RESTful Interactivity:
+    - The app should communicate with a RESTful API server using Retrofit. The app should pull
+      some sort of data from the remote API using an HTTP GET request and render it somewhere in
+      the local app. The app should also allow the local user to provide some sort of data that
+      will be sent to the remote API using an HTTP POST request.
+    - When the user exits and relaunches the app, data previously sent to the remote API should be
+      fetched from the remote API and shown to the user. The previously sent data should not
+      be saved using local persistence, but fetched from the live server instead, to prove the app
+      is “cloudified” in some way.
+    - You may choose to use an existing API or create one yourself, as long as your app is able
+    to both create data on the remote server and fetch those records.

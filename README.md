@@ -1,2 +1,1 @@
-# Easy-Recipes
-Easy Recipes is a mobile application project developed in Kotlin utilizing the Android  Studios IDE. This app aims to provide a user-friendly storage platform for browsing and saving culinary recipes. EasyRecipes features a clean intuitive user interface that allows for easy navigation.
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/WMgP5GjL)

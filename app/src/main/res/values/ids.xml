@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="welcomeImage" type="id" />
+    <item name="myRecipesCardView" type="id" />
+    <item name="myRecipesButton" type="id" />
+    <item name="addCardView" type="id" />
+    <item name="addButton" type="id" />
+    <item name="logoutCardView" type="id" />
+    <item name="logoutButton" type="id" />
+</resources>
